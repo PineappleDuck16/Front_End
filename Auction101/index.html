@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction House Game</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <h1>Welcome to the Auction Simulator</h1>
+
+   <p>Money: <span class="budget">0</span></p>
+
+    <div>
+        <h2>
+            Objective:
+        </h2>
+        <ul>
+            <li>Each player starts with $50 million.</li>
+            <li>Your mission is to make accurate price estimations for the artworks and strategically win as many as possible while managing your budget.</li>             
+        </ul>
+        <p>
+            For each artwork, players will be presented with an opportunity to guess the starting bid. 
+            <ul>
+                <li>If your guess is correct, the estimated  bid will be added to your budget.</li>
+                <li>There is no penalty for an incorrect estimation. You do not lose any money.</li>
+            </ul> 
+        </p>
+        <p>
+            Players can purchase additional clues to help refine their estimate. Each clue costs $10,000 and can provide valuable insight into the value of the artwork.
+        </p>
+        <p>
+            After viewing clues (optional), players can guess the final price for the artwork.
+            <ul>
+                <li>If the actual price is higher than your estimate:
+            You will not win the artwork, but your budget remains unaffected.</li>
+                <li>If the actual price is lower than your estimate:
+            You win the artwork, but the estimated price you guessed will be deducted from your budget.</li>
+            </ul>
+            
+        </p>
+        <a href="Game/Demo.html">
+            <button class="finish">
+                Good Luck
+            </button>
+        </a>
+    </div>
+</body>
+</html>

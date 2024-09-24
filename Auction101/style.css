@@ -1,0 +1,166 @@
+
+.dollars:before { content:'$'; }
+
+:root{
+    --gradient: linear-gradient(
+        90deg,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: gradiantani 5s infinite alternate;
+    display: flex;
+}
+
+@keyframes gradiantani{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.left, .right {
+    height: 100vh;
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Image Styling */
+div img {
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border: 5px solid #34495e;
+}
+
+/* Clues Section */
+.clues {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.clues p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#hintButton {
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hintButton:hover {
+    background-color: #3498db;
+}
+
+#hintDisplay {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Question Sections */
+.question {
+    margin-bottom: 10px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.question {
+    margin-bottom: 10px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.question h2 {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.question .price {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question .price:hover {
+    background-color: #16a085;
+}
+
+
+
+#next {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#next:hover {
+    background-color: #18ac8f;
+}
+
+.finish{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.finish:hover :focus{
+    background-color: #18ac8f;
+}
