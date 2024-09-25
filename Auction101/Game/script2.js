@@ -49,10 +49,10 @@ for(let button of buttons){
     }
 
 const hints = [
-    "Monet's work represents a key moment in art history as part of the Impressionist movement.",
-    "Paintings from Monet's haystack series are rare.",
-    "Monet's haystack series is iconic, symbolizing the broader Impressionist movement in popular culture.",
-    "The painting's well-preserved state enhances its desirability and value."
+    "Magritte is a leading figure in the Surrealist movement, and his works are highly influential in modern art.",
+    "Le Banquet exemplifies Magritte's signature use of thought-provoking imagery, making it a valuable piece for collectors.",
+    "Magritte's paintings have set high auction records, contributing to the overall market value of his works.",
+    "Magritte had a long and prolific career, consistently producing works that are considered masterpieces, adding to his reputation and the value of his art"
 ];
 
 function displayRandomHint() {

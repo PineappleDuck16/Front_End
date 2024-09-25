@@ -49,10 +49,11 @@ for(let button of buttons){
     }
 
 const hints = [
-    "Monet's work represents a key moment in art history as part of the Impressionist movement.",
-    "Paintings from Monet's haystack series are rare.",
-    "Monet's haystack series is iconic, symbolizing the broader Impressionist movement in popular culture.",
-    "The painting's well-preserved state enhances its desirability and value."
+    "In Natura Morta, Morandi's precise arrangement of simple bottles, vases, and jars creates a harmonious balance, showcasing his exceptional skill in composition",
+    "Morandi's meticulous attention to the texture and surface of the objects in Natura Morta adds depth and complexity, enhancing the painting's value.",
+    "Natura Morta was created during a period when Morandi was refining his minimalist style, making this painting a key example of his mature work.",
+    "This specific painting has been recognized as a precursor to minimalism, influencing generations of artists, thus increasing its cultural and monetary worth",
+    "the consistent demand for Morandi's Natura Morta series, which is considered the pinnacle of his oeuvre, drives up auction prices, making these paintings highly expensive."
 ];
 
 function displayRandomHint() {

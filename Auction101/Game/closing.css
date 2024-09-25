@@ -1,0 +1,64 @@
+
+.dollars:before { content:'$'; }
+
+:root{
+    --gradient: linear-gradient(
+        90deg,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: gradiantani 5s infinite alternate;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradiantani{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
