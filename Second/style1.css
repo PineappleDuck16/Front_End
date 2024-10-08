@@ -1,0 +1,136 @@
+ :root{ 
+    --cube-width: 300px;
+    --translateZ: 150px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+    
+}
+
+header h1{
+    margin: 0;
+    font-size: 100px;
+}
+header sub-heading{
+    margin: 0;
+    font-size: 24px;
+}
+
+.cube-container{
+    perspective: 1000px;
+}
+
+.cube-container .cube{
+    width: var(--cube-width);
+    height: var(--cube-width);
+    transform-style: preserve-3d;
+}
+
+
+.cube-container .cube-face{
+    width: var(--cube-width);
+    height: var(--cube-width);
+    font-size: 30px;
+    position: absolute;
+    background: yellow;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube-container .front{
+    background: #d63946;
+    transform: translateZ(var(--translateZ));
+}
+.cube-container .back{
+    background: #06d6a0;
+    transform: rotateY(180deg) translateZ(var(--translateZ));
+}
+.cube-container .left{
+    background: #023047;
+    transform: rotateY(-90deg) translateZ(var(--translateZ));
+}
+.cube-container .right{
+    background: #3d348b;
+    transform: rotateY(90deg) translateZ(var(--translateZ));
+}
+.cube-container .top{
+    background: #a8dadc;
+    transform: rotateX(90deg) translateZ(var(--translateZ));
+}
+.cube-container .bottom{
+    background: #ffd166;
+    transform: rotateX(-90deg) translateZ(var(--translateZ));
+}
+
+
+
+.page1{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(120rem at 0px 0px);
+  transition: clip-path 3s ease-in;
+}
+
+
+.loader{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg);
+}
+
+.loader span{
+    position: absolute;
+    display: block;
+    left: calc(11px * var(--i));
+    top: calc(11px * var(--i));
+    right: calc(11px * var(--i));
+    bottom: calc(11px * var(--i));
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #ccc, inset 0 5px 0 #ccc;
+    animation: animate 3s ease-in-out infinite both;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateZ(-100px);
+    }
+    50%{
+        transform: translateZ(100px);
+    }
+    100%{
+        transform: translateZ(-100px);
+    }
+}
