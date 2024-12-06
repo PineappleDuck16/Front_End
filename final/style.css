@@ -1,0 +1,15 @@
+#chart-container {
+    margin: 20px;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis-label {
+    font-size: 12px;
+}

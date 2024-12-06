@@ -1,0 +1,18 @@
+
+.view-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.view-controls button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.view-controls button:hover {
+    background: #f0f0f0;
+}
